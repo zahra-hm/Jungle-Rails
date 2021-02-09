@@ -1,2 +1,16 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+# <!-- Bootstrap CSS -->
+#   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<h1>Admin Dashboard</h1>
+
+<div class="categroties-count">
+    <h5 class="card-title">Number of Total Products</h5>
+    <p class="card-text"><%= @totalNumProduct %></p>
+    <%= link_to "Products", "/admin/products", class:"btn btn-primary" %>
+</div>
+<div class="categrories-count">
+    <h5 class="card-title">Number of Total Categories</h5>
+    <p class="card-text"><%= @totalNumCategories %></p>
+    <%= link_to "Categories", "/admin/categories", class:"btn btn-primary" %>
+</div>
+
