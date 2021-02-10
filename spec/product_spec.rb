@@ -4,8 +4,8 @@ RSpec.describe Product, type: :model do
   category= Category.create(name: "FakeCategory")
   subject {
     described_class.create(name: "Something",
-                        price: 12,
-                        quantity: 2,
+                        price: 35,
+                        quantity: 5,
                         category: category
                       )
   }
