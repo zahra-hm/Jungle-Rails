@@ -1,5 +1,7 @@
 class CartsController < ApplicationController
 
+  before_filter :authorize
+
   def show
   end
 
@@ -18,7 +20,7 @@ class CartsController < ApplicationController
   end
 
   private
-
+ 
   def modify_cart_delta(product_id, delta)
     cart[product_id] = (cart[product_id] || 0) + delta
     cart.delete(product_id) if cart[product_id] < 1
